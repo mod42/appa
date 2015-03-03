@@ -16,4 +16,6 @@
     <string name="pref_phone">Use Phone</string>
     <string name="app_settings">Settings</string>
     <string name="scanQRCode">Scan QR Code</string>
+    <string name="unRegister">Unregister Device (client only)</string>
+    <string name="unRegisterServer">Unregister Device on Server</string>
 </resources>

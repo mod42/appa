@@ -56,6 +56,8 @@ public final class R {
         public static final int scrollView=0x7f070000;
         public static final int socialLoginGridLayout=0x7f070002;
         public static final int topLabel=0x7f07000b;
+        public static final int unRegister=0x7f070015;
+        public static final int unRegisterServer=0x7f070016;
         public static final int webView=0x7f070008;
     }
     public static final class layout {
@@ -81,6 +83,8 @@ public final class R {
         public static final int pref_phone=0x7f050008;
         public static final int scanQRCode=0x7f050009;
         public static final int sharedUserLabel=0x7f05000a;
+        public static final int unRegister=0x7f05000b;
+        public static final int unRegisterServer=0x7f05000c;
     }
     public static final class xml {
         public static final int preferences=0x7f040000;

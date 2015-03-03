@@ -4,6 +4,9 @@
       <root url="jar://$PROJECT_DIR$/app/libs/mobile-sso-sdk-2.2.01.0.35.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../srcSDK" />
+      <root url="file://$PROJECT_DIR$/../../../../source/sdk_latest/sdk/src" />
+    </SOURCES>
   </library>
 </component>

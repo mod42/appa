@@ -77,6 +77,7 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.e(TAG,"onCreate called");
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.main);
@@ -85,7 +86,12 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         if (savedInstanceState != null) {
-            progressBar.setVisibility(savedInstanceState.getInt(STATE_PROGRESS_VISIBILITY));
+            if (savedInstanceState.getInt( STATE_PROGRESS_VISIBILITY) == View.VISIBLE)
+                progressBar.setVisibility(View.VISIBLE);
+            else if(savedInstanceState.getInt( STATE_PROGRESS_VISIBILITY) == View.INVISIBLE)
+                progressBar.setVisibility(View.INVISIBLE);
+            else
+                progressBar.setVisibility(View.GONE);
         }
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -124,7 +130,7 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-
+Log.d("","onCreateContextMenu called");
         menu.add(MENU_GROUP_LOGOUT, MENU_ITEM_LOG_OUT, Menu.NONE, "Log Out");
         menu.add(MENU_GROUP_LOGOUT, MENU_ITEM_LOG_OUT_CLIENT_ONLY, Menu.NONE, "Log Out (client only)");
         menu.add(MENU_GROUP_LOGOUT, MENU_ITEM_REMOVE_DEVICE_REGISTRATION, Menu.NONE, "Unregister Device");
@@ -156,6 +162,7 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
 
     // Log the user out of all client apps and notify the server to revoke tokens.
     private void doServerLogout() {
+        Log.d(TAG,"doServerLogout called");
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... params) {
@@ -292,6 +299,7 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.d("onOptionsItemSelected","onOptionsItemSelected called");
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.entBrowser:
@@ -306,6 +314,14 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
                 IntentIntegrator intentIntegrator = new IntentIntegrator(this);
                 intentIntegrator.initiateScan();
                 break;
+            case R.id.unRegister:
+                mobileSso().destroyAllPersistentTokens();
+                showMessage("Device Registration Destroyed (client only)", Toast.LENGTH_SHORT);
+                break;
+            case R.id.unRegisterServer:
+                doServerUnregisterDevice();
+                break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -395,6 +411,7 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
+        Log.d("","onCreateOptionsMenu called");
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_activity_actions, menu);
         return super.onCreateOptionsMenu(menu);
@@ -403,7 +420,7 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
+        Log.d("","onActivityResult called");
         if (requestCode == ACTION_SETTINGS_CONFIG_MENU) {
             if (onSharedPreferenceChangeListener == null)
                 initSharedPreferenceChangeListener();
@@ -436,10 +453,12 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
                 if (s.equals("pref_location")) {
                     ssoConf.putBoolean(MobileSsoConfig.PROP_LOCATION_ENABLED, sharedPreferences.getBoolean("pref_location", true));
                     restartConfig = true;
+                    Log.d(TAG,"changed pref_location");
                 }
                 if (s.equals("pref_phone")) {
                     ssoConf.putBoolean(MobileSsoConfig.PROP_MSISDN_ENABLED, sharedPreferences.getBoolean("pref_phone", true));
                     restartConfig = true;
+                    Log.d(TAG,"changed pref_phone");
                 }
 
                 if (restartConfig) {

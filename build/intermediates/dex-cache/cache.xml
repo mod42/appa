@@ -9,18 +9,18 @@
         <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ee9d3245bc34631b01bdd6f41c4bead3b26fee50.jar" />
     </item>
     <item
-        jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\libs\core-3.1.1-SNAPSHOT.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="e6ef5989cac8d7f66d2787165d9b322eb50bf149">
-        <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\core-3.1.1-SNAPSHOT-adb60466fd249213c2e2232ee4be99c94abdb435.jar" />
-    </item>
-    <item
         jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\classes-9d8481dc92064bd98593b72a93dd0b8a278768f5.jar" />
+    </item>
+    <item
+        jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\libs\core-3.1.1-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e6ef5989cac8d7f66d2787165d9b322eb50bf149">
+        <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\core-3.1.1-SNAPSHOT-adb60466fd249213c2e2232ee4be99c94abdb435.jar" />
     </item>
     <item
         jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\libs\android-integration-3.1.1-SNAPSHOT.jar"
@@ -37,18 +37,18 @@
         <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-c55d878918aa2827f1f4d9299d6480e8fda55530.jar" />
     </item>
     <item
-        jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\libs\scprov-jdk15on-1.47.0.2.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="1e2f52dbf7402b12b792282078b9f895512ae5af">
-        <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\scprov-jdk15on-1.47.0.2-cecbddd20ab4e1bbaf46e9f1497634100c3608e2.jar" />
-    </item>
-    <item
         jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\libs\sc-light-jdk15on-1.47.0.2.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="d5c98671cc97fa0d928be1c7eb5edd3fb95d3234">
         <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\sc-light-jdk15on-1.47.0.2-dbb57dd8b039e9e98e898bf6e010dd7a839439a1.jar" />
+    </item>
+    <item
+        jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\libs\scprov-jdk15on-1.47.0.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1e2f52dbf7402b12b792282078b9f895512ae5af">
+        <dex dex="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\build\intermediates\pre-dexed\debug\scprov-jdk15on-1.47.0.2-cecbddd20ab4e1bbaf46e9f1497634100c3608e2.jar" />
     </item>
     <item
         jar="C:\Ablage\Software\L7\AndroidSDKTutorial\MSSOforAndroid\MAG-2.2.01-ExampleA\appa\app\libs\mobile-sso-sdk-2.2.01.0.35.jar"

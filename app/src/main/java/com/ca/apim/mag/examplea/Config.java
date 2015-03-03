@@ -6,6 +6,7 @@
 package com.ca.apim.mag.examplea;
 
 import android.os.Bundle;
+
 import com.l7tech.msso.MobileSsoConfig;
 
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class    Config {
         //MAG Sdk Configuration
         Bundle myConfig = new Bundle();
         myConfig.putString(MobileSsoConfig.PROP_TOKEN_HOSTNAME, "explore.apim.ca");
+
         myConfig.putString(MobileSsoConfig.PROP_TOKEN_URI_PREFIX, "mag");
         myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "3f27bb4f-b5aa-458b-962b-14d352b7977c");
         myConfig.putString(MobileSsoConfig.PROP_CLIENT_SECRET,"ab58bb25-90f9-4a6e-a9a5-79d2564e688f");
@@ -47,6 +49,7 @@ public class    Config {
         myConfig.putStringArrayList(MobileSsoConfig.PROP_TRUSTED_CERTS_PEM, new ArrayList<String>(Arrays.asList(
                 cert)));
         myConfig.putBoolean(MobileSsoConfig.PROP_LOCATION_ENABLED, true);
+        myConfig.putString(MobileSsoConfig.PROP_LOCATION_PROVIDER_NAME, "gps");
         myConfig.putBoolean(MobileSsoConfig.PROP_SSO_ENABLED, true);
         myConfig.putBoolean(MobileSsoConfig.PROP_MSISDN_ENABLED, true);
         //myConfig.putString(MobileSsoConfig.PROP_AUTHORIZE_REDIRECT_URI, "<Redirect URI for Social Logon>");

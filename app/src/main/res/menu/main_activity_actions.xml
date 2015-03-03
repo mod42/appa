@@ -20,11 +20,16 @@
                   android:icon="@drawable/browser"
                   android:title="@string/entBrowser"
                   android:showAsAction="ifRoom"></item>
-
             <item android:id="@+id/scanQRCode"
                   android:icon="@drawable/qr_code"
                   android:title="@string/scanQRCode"
                   android:showAsAction="ifRoom"></item>
+            <item android:id="@+id/unRegister"
+                android:title="@string/unRegister"
+                android:showAsAction="ifRoom"></item>
+            <item android:id="@+id/unRegisterServer"
+                android:title="@string/unRegisterServer"
+                android:showAsAction="ifRoom"></item>
 
         </menu>
     </item>
