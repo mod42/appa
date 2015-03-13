@@ -27,8 +27,11 @@ public class    Config {
         myConfig.putString(MobileSsoConfig.PROP_TOKEN_HOSTNAME, "explore.apim.ca");
 
         myConfig.putString(MobileSsoConfig.PROP_TOKEN_URI_PREFIX, "mag");
-        myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "3f27bb4f-b5aa-458b-962b-14d352b7977c");
-        myConfig.putString(MobileSsoConfig.PROP_CLIENT_SECRET,"ab58bb25-90f9-4a6e-a9a5-79d2564e688f");
+        myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "972e1f3f-03a1-440d-98e0-7a6955b97e3c");
+        //myConfig.putString(MobileSsoConfig.PROP_CLIENT_SECRET,"296742e6-cffc-4fc9-8371-16906097a248");
+        //myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "3f27bb4f-b5aa-458b-962b-14d352b7977c");
+        //myConfig.putString(MobileSsoConfig.PROP_CLIENT_SECRET,"ab58bb25-90f9-4a6e-a9a5-79d2564e688f
+        //myConfig.putString(MobileSsoConfig.PROP_OAUTH_SCOPE,"openid msso phone profile address email msso_register");
         myConfig.putString(MobileSsoConfig.PROP_ORGANIZATION, "CA Technologies");
         String cert =  "-----BEGIN CERTIFICATE-----\n" +
                 "MIIC+TCCAeGgAwIBAgIJAOzcJidEKVPEMA0GCSqGSIb3DQEBDAUAMBoxGDAWBgNVBAMTD2V4cGxv\n" +

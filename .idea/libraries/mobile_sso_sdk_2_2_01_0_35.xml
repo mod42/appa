@@ -5,7 +5,6 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/../../srcSDK" />
       <root url="file://$PROJECT_DIR$/../../../../source/sdk_latest/sdk/src" />
     </SOURCES>
   </library>

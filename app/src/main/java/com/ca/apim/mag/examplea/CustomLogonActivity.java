@@ -80,13 +80,10 @@ public class CustomLogonActivity extends AbstractLogonActivity {
             for (final View provider : providers) {
                 Log.e("CLT", "provider.getId()");
                 if (provider instanceof ImageButton) {
-                    Log.e("CLT", "provider: "+ provider.getId());
+                    //Log.e("CLT", "provider: "+ ((ImageButton)provider).performClick());
                     gridLayout.addView(provider);
                     Log.e("CLT", "provider.getId()");
-                    if(provider.getId() != 0 ){
-                        //provider.performClick();
-                        Log.d("CLT", "provider: "+ provider.getId());
-                    }
+
                 } else if (provider instanceof QRCode) {
                     qr.addView(provider);
                 }
