@@ -6,12 +6,12 @@
 package com.ca.apim.mag.examplea;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
 
-import com.ca.apim.mag.examplea.R;
 import com.l7tech.msso.auth.QRCode;
 import com.l7tech.msso.auth.QRCodeRenderer;
 import com.l7tech.msso.gui.AbstractLogonActivity;
@@ -70,20 +70,18 @@ public class CustomLogonActivity extends AbstractLogonActivity {
 
         }));
 
+        Log.e("steffen","Provider: "+MyVariables.MyStaticString);
+
         addAuthRenderer(new NFCRenderer());
 
         List<View> providers = getProviders();
 
         GridLayout gridLayout = (GridLayout) findViewById(R.id.socialLoginGridLayout);
-        System.out.println("CLT provider.getId()");
         if (!providers.isEmpty()) {
             for (final View provider : providers) {
-                Log.e("CLT", "provider.getId()");
                 if (provider instanceof ImageButton) {
-                    //Log.e("CLT", "provider: "+ ((ImageButton)provider).performClick());
-                    gridLayout.addView(provider);
-                    Log.e("CLT", "provider.getId()");
-
+                    provider.performClick();
+                    //gridLayout.addView(provider);
                 } else if (provider instanceof QRCode) {
                     qr.addView(provider);
                 }
