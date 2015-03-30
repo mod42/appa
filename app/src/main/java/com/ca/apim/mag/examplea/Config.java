@@ -27,13 +27,13 @@ public class    Config {
         myConfig.putString(MobileSsoConfig.PROP_TOKEN_HOSTNAME, "explore.apim.ca");
 
         myConfig.putString(MobileSsoConfig.PROP_TOKEN_URI_PREFIX, "mag");
-        myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "972e1f3f-03a1-440d-98e0-7a6955b97e3c");
+        //myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "972e1f3f-03a1-440d-98e0-7a6955b97e3c");
         //myConfig.putString(MobileSsoConfig.PROP_CLIENT_SECRET,"296742e6-cffc-4fc9-8371-16906097a248");
-        //myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "3f27bb4f-b5aa-458b-962b-14d352b7977c");
+        myConfig.putString(MobileSsoConfig.PROP_CLIENT_ID, "3f27bb4f-b5aa-458b-962b-14d352b7977c");
         //myConfig.putString(MobileSsoConfig.PROP_CLIENT_SECRET,"ab58bb25-90f9-4a6e-a9a5-79d2564e688f
         //myConfig.putString(MobileSsoConfig.PROP_OAUTH_SCOPE,"openid msso phone profile address email msso_register");
         myConfig.putString(MobileSsoConfig.PROP_ORGANIZATION, "CA Technologies");
-        String cert =  "-----BEGIN CERTIFICATE-----\n" +
+        String cert1 =  "-----BEGIN CERTIFICATE-----\n" +
                 "MIIC+TCCAeGgAwIBAgIJAOzcJidEKVPEMA0GCSqGSIb3DQEBDAUAMBoxGDAWBgNVBAMTD2V4cGxv\n" +
                 "cmUuYXBpbS5jYTAeFw0xNDEyMDkwMTQ3MDJaFw0yNDEyMDYwMTQ3MDJaMBoxGDAWBgNVBAMTD2V4\n" +
                 "cGxvcmUuYXBpbS5jYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIJDK/p445vJdr8+\n" +
@@ -49,8 +49,7 @@ public class    Config {
                 "QMOv0nmk6p8ABR1dGyAmnnaFzdFn5hibImFCF+YTY5+waK5Y8ZJq4K+dlf8R7qeQ55zjLyNtfxRA\n" +
                 "0jfEeli0AqZhRC3NthgM5jBeqfXpabH3\n" +
                 "-----END CERTIFICATE-----";
-        myConfig.putStringArrayList(MobileSsoConfig.PROP_TRUSTED_CERTS_PEM, new ArrayList<String>(Arrays.asList(
-                cert)));
+        myConfig.putStringArrayList(MobileSsoConfig.PROP_TRUSTED_CERTS_PEM, new ArrayList<String>(Arrays.asList(cert1)));
         myConfig.putBoolean(MobileSsoConfig.PROP_LOCATION_ENABLED, true);
         myConfig.putString(MobileSsoConfig.PROP_LOCATION_PROVIDER_NAME, "gps");
         myConfig.putBoolean(MobileSsoConfig.PROP_SSO_ENABLED, true);

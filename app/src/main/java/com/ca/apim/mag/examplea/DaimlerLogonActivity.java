@@ -22,7 +22,7 @@ import com.l7tech.msso.gui.AbstractLogonActivity;
 
 import java.util.List;
 
-public class DaimlerLogonActivity extends AbstractLogonActivity {
+    public class DaimlerLogonActivity extends AbstractLogonActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

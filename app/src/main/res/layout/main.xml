@@ -42,11 +42,17 @@
 
         <Button
                 android:id="@+id/listItemsButton"
-                android:layout_width="wrap_content"
+                android:layout_width="84dp"
                 android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:text="List Items"
+            android:text="List Items"
                 />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/imageButton"
+            android:layout_weight="0.10"
+            android:background="@drawable/facebook_enable" />
 
         <Button
                 android:id="@+id/logOutButton"
@@ -55,6 +61,13 @@
                 android:layout_weight="1"
                 android:text="Log Out"
                 />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/imageButton2"
+            android:layout_weight="0.10"
+            android:background="@drawable/google_enable" />
     </LinearLayout>
 </LinearLayout>
 

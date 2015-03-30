@@ -113,9 +113,48 @@ public class ExampleActivity extends FragmentActivity implements JsonDownloaderF
                     a.clear();
                     a.notifyDataSetChanged();
                 }
+
                 finalHttpFragment.downloadJson();
             }
         });
+
+        final ImageButton listButton1 = (ImageButton) findViewById(R.id.imageButton);
+        listButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArrayAdapter a = ((ArrayAdapter) itemList.getAdapter());
+                if (a != null) {
+                    a.clear();
+                    a.notifyDataSetChanged();
+                }
+                MyVariables.MyStaticString = new String("facebook");
+//                Intent intent = new Intent(ExampleActivity.this, CustomLogonActivity.class);
+//                intent.putExtra("selectedSL", "facebook");
+//                startActivity(intent);
+
+                finalHttpFragment.downloadJson();
+            }
+        });
+
+        final ImageButton listButton2 = (ImageButton) findViewById(R.id.imageButton2);
+        listButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArrayAdapter a = ((ArrayAdapter) itemList.getAdapter());
+                if (a != null) {
+                    a.clear();
+                    a.notifyDataSetChanged();
+                }
+                MyVariables.MyStaticString = new String("google");
+
+//                Intent intent = new Intent(ExampleActivity.this, CustomLogonActivity.class);
+//                intent.putExtra("selectedSL", "google");
+//                startActivity(intent);
+//
+                finalHttpFragment.downloadJson();
+            }
+        });
+
 
         final Button logOutButton = (Button) findViewById(R.id.logOutButton);
         logOutButton.setOnClickListener(new View.OnClickListener() {

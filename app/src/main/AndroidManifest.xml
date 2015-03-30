@@ -46,6 +46,15 @@
          <category android:name="android.intent.category.DEFAULT"/>
      </intent-filter>
  </activity>
+        <activity android:name="com.ca.apim.mag.examplea.DaimlerLogonActivity"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.l7tech.msso.service.action.OBTAIN_CREDENTIALS"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         -->
 
          <activity android:name="com.ca.apim.mag.examplea.CustomLogonActivity"
                    android:theme="@android:style/Theme.Holo.Dialog"
@@ -55,15 +64,7 @@
                  <category android:name="android.intent.category.DEFAULT" />
              </intent-filter>
          </activity>
-  -->
-        <activity android:name="com.ca.apim.mag.examplea.DaimlerLogonActivity"
-            android:theme="@android:style/Theme.Holo.Dialog"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.l7tech.msso.service.action.OBTAIN_CREDENTIALS"/>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+
         <activity android:name="com.l7tech.msso.gui.SocialLoginActivity"
                   android:theme="@android:style/Theme.Holo.Light"
                   android:windowSoftInputMode="stateVisible"
